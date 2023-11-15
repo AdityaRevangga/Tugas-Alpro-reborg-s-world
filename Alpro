@@ -1,1 +1,29 @@
+Nama kelompok 10 kelas_E
+1. Ahmad Afredo Farikh Asfiya - 23091397150
+2. Aditya Revangga Dwi Putra - 23091397167
+3. Yosion Besty Marpaung – 23091397168
 
+----Hurdle 3----
+def hurdle_3():
+    while not at_goal():
+        if wall_in_front():
+            jump_hurdle()
+        else:
+            move()
+
+def jump_hurdle():
+    turn_left()
+    while wall_on_right():
+        move()
+    turn_right()
+    move()
+    turn_right()
+    while not wall_in_front():
+        move()
+    turn_left()
+
+def turn_right():
+    for i in range(3):
+        turn_left()
+
+ 
